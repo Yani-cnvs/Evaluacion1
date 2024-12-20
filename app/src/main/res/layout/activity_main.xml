@@ -8,5 +8,148 @@
     tools:context=".MainActivity">
 
 
+    <ImageView
+        android:id="@+id/LogoIv"
+        android:layout_width="182dp"
+        android:layout_height="184dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_restaurante" />
+
+    <ImageView
+        android:id="@+id/CazuelaIv"
+        android:layout_width="111dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogoIv"
+        app:srcCompat="@drawable/cazuela" />
+
+    <ImageView
+        android:id="@+id/PastelIv"
+        android:layout_width="116dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CazuelaIv"
+        app:srcCompat="@drawable/pastel_de_choclo" />
+
+    <Button
+        android:id="@+id/IngresarPedidoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Ingresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PastelIv" />
+
+    <TextView
+        android:id="@+id/CazuelaTv"
+        android:layout_width="82dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Cazuela"
+        app:layout_constraintStart_toEndOf="@+id/CazuelaIv"
+        app:layout_constraintTop_toBottomOf="@+id/LogoIv" />
+
+    <EditText
+        android:id="@+id/CantidadCazuelaEt"
+        android:layout_width="71dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="60dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/CazuelaIv"
+        app:layout_constraintTop_toBottomOf="@+id/CazuelaTv" />
+
+    <TextView
+        android:id="@+id/CantCazuelaTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Cant."
+        app:layout_constraintEnd_toStartOf="@+id/CantidadCazuelaEt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/CazuelaIv"
+        app:layout_constraintTop_toBottomOf="@+id/CazuelaTv" />
+
+    <TextView
+        android:id="@+id/PastelDeChocloTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="30dp"
+        android:text="Pastel de Choclo"
+        app:layout_constraintBottom_toTopOf="@+id/CantPastelTv"
+        app:layout_constraintStart_toEndOf="@+id/PastelIv"
+        app:layout_constraintTop_toBottomOf="@+id/CantCazuelaTv" />
+
+    <TextView
+        android:id="@+id/CantPastelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="99dp"
+        android:text="Cant."
+        app:layout_constraintStart_toEndOf="@+id/PastelIv"
+        app:layout_constraintTop_toBottomOf="@+id/CantCazuelaTv" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="70dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/IngresarPedidoBtn"
+        app:layout_constraintStart_toEndOf="@+id/CantPastelTv"
+        app:layout_constraintTop_toBottomOf="@+id/CantidadCazuelaEt"
+        app:layout_constraintVertical_bias="0.385" />
+
+    <Switch
+        android:id="@+id/PropinaSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:text="Agrega propina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PastelIv" />
+
+    <TextView
+        android:id="@+id/Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:text="Total a pagar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IngresarPedidoBtn" />
+
+    <TextView
+        android:id="@+id/SumaCazuelaTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CantidadCazuelaEt"
+        app:layout_constraintTop_toBottomOf="@+id/LogoIv"
+        tools:text="SumaCazuela" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        tools:text="SumaPastel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber2"
+        app:layout_constraintTop_toBottomOf="@+id/SumaCazuelaTv" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
