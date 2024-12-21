@@ -1,4 +1,4 @@
 package com.example.evaluacion1yanitzacv.modelo
 
-class ItemMenu(val nombre: String, val precio: String) {
+data class ItemMenu(val nombre: String, val precio:String) {
 }

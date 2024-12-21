@@ -1,6 +1,6 @@
 package com.example.evaluacion1yanitzacv.modelo
 
-class ItemMesa(val itemMenu: ItemMenu, val cantidad: Int) {
+data class ItemMesa(val itemMenu: Int, val cantidad: ItemMenu) {
     fun calcularSubtotal(): Int {
         return itemMenu.precio.toInt() * cantidad
     }
