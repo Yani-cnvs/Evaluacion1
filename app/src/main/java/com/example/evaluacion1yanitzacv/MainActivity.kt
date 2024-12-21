@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             val cantidadPastel = CantidadPastelEt.text.toString().toIntOrNull()
 
             if (cantidadCazuela != null && cantidadPastel != null) {
-                val total = sum(cantidadCazuela, cantidadPastel)
+                val total = cantidadCazuela + cantidadPastel
                 TotalTv.text = "El total es: $total"
             }
         }
