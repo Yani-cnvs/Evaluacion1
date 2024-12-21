@@ -100,10 +100,11 @@
         app:layout_constraintTop_toBottomOf="@+id/CantCazuelaTv" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/CantidadPastelEt"
         android:layout_width="70dp"
         android:layout_height="47dp"
         android:layout_marginStart="12dp"
+        android:layout_marginTop="45dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/IngresarPedidoBtn"
@@ -125,11 +126,12 @@
         android:id="@+id/Total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
         android:layout_marginTop="25dp"
-        android:text="Total a pagar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IngresarPedidoBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/IngresarPedidoBtn"
+        tools:text="Total a pagar" />
 
     <TextView
         android:id="@+id/SumaCazuelaTv"
@@ -142,14 +144,15 @@
         tools:text="SumaCazuela" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/SumaPastelTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
-        tools:text="SumaPastel"
+        android:layout_marginTop="112dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber2"
-        app:layout_constraintTop_toBottomOf="@+id/SumaCazuelaTv" />
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toEndOf="@+id/CantidadPastelEt"
+        app:layout_constraintTop_toBottomOf="@+id/SumaCazuelaTv"
+        tools:text="SumaPastel" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
